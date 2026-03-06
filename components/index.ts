@@ -1,0 +1,9 @@
+export { Header } from "./Header";
+export { Hero } from "./Hero";
+export { ServicesSection } from "./ServicesSection";
+export { PortfolioGrid } from "./PortfolioGrid";
+export { MethodSection } from "./MethodSection";
+export { TestimonialsSection } from "./TestimonialsSection";
+export { ContactForm } from "./ContactForm";
+export { WhatsAppButton } from "./WhatsAppButton";
+export { Footer } from "./Footer";

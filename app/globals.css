@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0F172A;
+  --foreground: #f5f5f7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-poppins);
+  --color-primary-300: #d8b4ff;
+  --color-primary-400: #c689ff;
+  --color-primary-500: #b85cff;
+  --color-primary-600: #a635ff;
+  --color-primary-700: #8b1cff;
+  --color-primary-900: #5a2fa6;
+  --color-secondary-300: #ffb3c6;
+  --color-secondary-400: #ff8fa3;
+  --color-secondary-500: #ff6b85;
+  --color-secondary-600: #ff4d6d;
+  --color-secondary-900: #9a2844;
+  --color-dark-900: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  @apply antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #0F172A 0%, #1a1f3a 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(135deg, #6C3BFF 0%, #FF4D6D 100%);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(108, 59, 255, 0.3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins);
+}
+
+/* Utility classes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(107, 59, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 59, 255, 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 59, 255, 0.5);
 }
