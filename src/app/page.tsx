@@ -8,7 +8,7 @@ import {
   ServicesSection,
   TestimonialsSection,
   WhatsAppButton,
-} from "@/components";
+} from "@/src/components";
 
 export default function Home() {
   return (

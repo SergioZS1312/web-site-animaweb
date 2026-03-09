@@ -1,6 +1,6 @@
 "use client";
 
-import { services } from "@/data/services";
+import { services } from "@/src/data/services";
 import { ServiceCard } from "./ServiceCard";
 
 export function ServicesSection() {

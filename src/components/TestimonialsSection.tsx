@@ -1,6 +1,6 @@
 "use client";
 
-import { testimonials } from "@/data/testimonials";
+import { testimonials } from "@/src/data/testimonials";
 import { Star } from "lucide-react";
 import { useState } from "react";
 

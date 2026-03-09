@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { services } from "@/data/services";
+import { services } from "@/src/data/services";
 import { Mail, Phone, User, FileText, Send, CheckCircle } from "lucide-react";
 
 export function ContactForm() {

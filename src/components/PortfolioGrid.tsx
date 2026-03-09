@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { X } from "lucide-react";
-import { portfolioItems } from "@/data/portfolio";
+import { portfolioItems } from "@/src/data/portfolio";
 
 interface PortfolioModalProps {
   item: (typeof portfolioItems)[0] | null;

@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
-import { Service } from "@/data/services";
+import { Service } from "@/src/data/services";
 import { useState } from "react";
 
 interface ServiceCardProps {

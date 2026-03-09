@@ -1,6 +1,6 @@
 "use client";
 
-import { methodSteps } from "@/data/services";
+import { methodSteps } from "@/src/data/services";
 import { ArrowRight } from "lucide-react";
 
 export function MethodSection() {
